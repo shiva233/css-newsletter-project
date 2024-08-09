@@ -1,0 +1,124 @@
+
+/* Add your CSS here */
+h1 {
+    font-family: "Snell Roundhand";
+    font-weight: normal;
+    font-size: 55px;
+    text-align: center;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+.page {
+    display: grid;
+    grid-template-areas:
+      "brand-header brand-header  brand-header "
+      "nav-links    nav-links     nav-links "
+      "story-1      story-2       story-3"
+      "story-4      story-5       story-5";
+
+      margin: 30px;
+  }
+
+  
+
+
+
+
+.nav-links {
+    grid-area: nav-links;
+    
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none; 
+    margin: -3px;
+
+    
+}
+
+.story-1 {
+    grid-area: story-1;
+}
+
+.story-2 {
+    grid-area: story-2;
+}
+
+.story-3 {
+    grid-area: story-3;
+}
+
+.story-4 {
+    grid-area: story-4;
+}
+
+.story-5 {
+    grid-area: story-5;
+}
+
+.story {
+
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    padding: 10px;
+    margin: -3px;
+    
+}
+
+a:-webkit-any-link {
+    color: #635d5d;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:-webkit-any-link:hover {
+    color: #635d5d;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.site-section {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+.article-title {
+    font-family: "Snell Roundhand";
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+}
+
+.article-img {
+    display: block;
+    max-height: 250px;
+    margin: auto;
+}
+    
+
+.brand-header {
+    grid-area: brand-header;
+    background-color: #ffffff;
+    color: black;
+   
+    font-family: "Snell Roundhand";
+    font-weight: normal;
+    font-size: 60px;
+
+    padding: 10px;
+    text-align: center;
+}
